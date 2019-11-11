@@ -1,0 +1,17 @@
+{
+    "name": "Countdown Timer",
+    "version": "1.0",
+    "description": "This Extension add a timer to redirect to new webpage!",
+    "manifest_version": 2,
+    "incognito": "split",  
+    "content_scripts": [
+        {
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"],
+        "js": ["main.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
