@@ -1,0 +1,16 @@
+{
+    "name": "Title tag Redirection",
+    "version": "1.0",
+    "description": "This Extension checks for the title and meta name for specific value so that it will redirect to google.com!",
+    "manifest_version": 2,
+    "incognito": "split",  
+    "content_scripts": [
+        {
+        "matches": ["https://www.google.com/*"],
+        "js": ["main.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
